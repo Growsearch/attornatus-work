@@ -1,0 +1,10 @@
+package com.attornatus.crm.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.attornatus.crm.model.Departament;
+
+
+public interface ClienteRepository extends JpaRepository<Departament, Long>{
+	
+}
