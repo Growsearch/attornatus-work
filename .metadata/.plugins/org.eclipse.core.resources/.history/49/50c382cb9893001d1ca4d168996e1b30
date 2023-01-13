@@ -1,0 +1,36 @@
+package com.attornatus.crm.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tb_endereco")
+public class Endereco {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long numero;
+	private String name;
+	
+	public Endereco() {
+	}
+
+	public Long getnumero() {
+		return numero;
+	}
+
+	public void setnumero(Long numero) {
+		this.numero = numero;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}

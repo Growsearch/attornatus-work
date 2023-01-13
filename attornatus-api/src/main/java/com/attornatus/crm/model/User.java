@@ -17,11 +17,11 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private String endereco;
+	private String data;
 	
 	@ManyToOne
-	@JoinColumn(name = "departament_id")
-	private Departament departament;
+	@JoinColumn(name = "endereco_id")
+	private Endereco endereco;
 	
 	public User() {
 		
@@ -43,19 +43,20 @@ public class User {
 		this.name = name;
 	}
 
-	public String getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
 
-	public void setEndereco(String endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-
-	public Departament getDepartment() {
-		return departament;
+	
+	public String getData() {
+		return data;
+	}
+	
+	public void setData(String data) {
+		this.data = data;	
 	}
 
-	public void setDepartment(Departament department) {
-		this.departament = department;
-	}
 }

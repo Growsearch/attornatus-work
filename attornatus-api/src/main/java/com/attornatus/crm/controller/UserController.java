@@ -23,9 +23,10 @@ public class UserController {
 	
 	@GetMapping
 	public List<User> findAll() {
-		return repository.findAll();
+		List<User> result = repository.findAll();
+		return result;
 	}
-	
+
 	@GetMapping(value = "/{id}")
 	public User findAll(@PathVariable Long id) {
 		return repository.findById(id).get();

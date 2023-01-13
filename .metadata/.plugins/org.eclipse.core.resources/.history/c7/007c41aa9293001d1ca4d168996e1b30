@@ -1,0 +1,5 @@
+package com.attornatus.crm.model;
+
+public class Endereco {
+
+}
