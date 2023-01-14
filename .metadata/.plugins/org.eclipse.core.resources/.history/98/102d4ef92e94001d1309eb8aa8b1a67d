@@ -1,0 +1,31 @@
+package com.attornatus.crm.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tb_endereco")
+public class Endereco {
+
+	private String numero;
+	private String name;
+	
+	public Endereco() {
+	}
+
+	public String getnumero() {
+		return numero;
+	}
+
+	public void setnumero(String numero) {
+		this.numero = numero;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}

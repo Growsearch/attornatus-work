@@ -24,7 +24,6 @@ public class User {
 	private Endereco endereco;
 	
 	public User() {
-		
 	}
 
 	public Long getId() {

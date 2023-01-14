@@ -1,0 +1,7 @@
+INSERT INTO tb_department(name) VALUES ('recreio');
+INSERT INTO tb_department(name) VALUES ('barra');
+
+INSERT INTO tb_user(department_id, name, email) VALUES (1, 'Maria', '12/12/12');
+INSERT INTO tb_user(department_id, name, email) VALUES (1, 'Bob', '14/08/22');
+INSERT INTO tb_user(department_id, name, email) VALUES (2, 'Alex', '09/08/23');
+INSERT INTO tb_user(department_id, name, email) VALUES (2, 'Ana', '04/04/21');
